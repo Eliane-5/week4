@@ -18,8 +18,8 @@
 // }
 var toppingsArray = ["Ham, pineapple, Cheese","Bacon, shrimp, tomato sauce","Barbecue sauce, chicken","Taco toppings, picante sauce","Kale, ricotta, and sausage","Garlic and ranch, Garlic ranch sauce"];
 var sizePrice,crustPrice,toppingsPrice;
-// var totalPrice = [];
-// var sumTotal = 0;
+var totalPrice = [];
+var sumTotal = 0;
 function price(size,crust,toppings){ 
     if(size==="Small"){
         sizePrice = 5;
@@ -210,14 +210,14 @@ function price(size,crust,toppings){
             }
         }
     }
-    // var pricing = (sizePrice + toppingsPrice + crustPrice) * amount;
-    // console.log("pricing: "+pricing);
-    // totalPrice.push(pricing);
-    // console.log(totalPrice);
-    // for(var i=0;i<totalPrice.length;i++){
-    //     sumTotal+=totalPrice[i];
-    //     console.log("sum "+sumTotal);
-    // }
+    var pricing = (sizePrice + toppingsPrice + crustPrice) * amount;
+    console.log("pricing: "+pricing);
+    totalPrice.push(pricing);
+    console.log(totalPrice);
+    for(var i=0;i<totalPrice.length;i++){
+        sumTotal+=totalPrice[i];
+        console.log("sum "+sumTotal);
+    }
     return (sizePrice + toppingsPrice + crustPrice) * amount;
 }
 

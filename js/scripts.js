@@ -6,13 +6,13 @@ var Orders = function(size,crust,toppings,number,addition){
     this.amount = number;
     this.comment = addition;
 }
-// function resetInputs(){
-//     $("#size").val("");
-//     $("#crust").val("");
-//     $("#toppings").val("");
-//     $("#comment").val("");
-//     $("#num").val("");
-// }
+function resetInputs(){
+    $("#size").val("");
+    $("#crust").val("");
+    $("#toppings").val("");
+    $("#comment").val("");
+    $("#num").val("");
+}
 // Orders.prototype.fullOrder = function (){
 //     return this.amount + " " + this.size + ", " + this.crust + ", " + this.toppings + " and: " + this.comment;
 // }

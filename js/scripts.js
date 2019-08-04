@@ -84,69 +84,69 @@ function price(size,crust,toppings){
             }
         }
     }
-    // else if(size==="Medium"){
-    //     sizePrice = 10;
-    //     if(crust==="Thin Crust"){
-    //         crustPrice = 2;
-    //         if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
-    //             toppingsPrice = 5;
-    //         }
-    //         else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
-    //             toppingsPrice = 8;
-    //         }
-    //         else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
-    //             toppingsPrice = 6;
-    //         }
-    //     }
-    //     else if(crust==="Thick Crust" || crust==="Stuffed Crust"){
-    //         crustPrice=4;
-    //         if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
-    //             toppingsPrice = 5;
-    //         }
-    //         else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
-    //             toppingsPrice = 8;
-    //         }
-    //         else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
-    //             toppingsPrice = 6;
-    //         }
-    //     }
-    //     else if(crust==="Pan Crust"){
-    //         crustPrice=3;
-    //         if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
-    //             toppingsPrice = 5;
-    //         }
-    //         else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
-    //             toppingsPrice = 8;
-    //         }
-    //         else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
-    //             toppingsPrice = 6;
-    //         }
-    //     }
-    //     else if(crust==="Deep Crust"){
-    //         crustPrice=4;
-    //         if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
-    //             toppingsPrice = 5;
-    //         }
-    //         else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
-    //             toppingsPrice = 8;
-    //         }
-    //         else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
-    //             toppingsPrice = 6;
-    //         }
-    //     }
-    //     else if(crust==="Cheese Filled Crust"){
-    //         crustPrice=10;
-    //         if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
-    //             toppingsPrice = 5;
-    //         }
-    //         else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
-    //             toppingsPrice = 8;
-    //         }
-    //         else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
-    //             toppingsPrice = 6;
-    //         }
-    //     }
-    // }
+    else if(size==="Medium"){
+        sizePrice = 10;
+        if(crust==="Thin Crust"){
+            crustPrice = 2;
+            if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
+                toppingsPrice = 5;
+            }
+            else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
+                toppingsPrice = 8;
+            }
+            else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
+                toppingsPrice = 6;
+            }
+        }
+        else if(crust==="Thick Crust" || crust==="Stuffed Crust"){
+            crustPrice=4;
+            if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
+                toppingsPrice = 5;
+            }
+            else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
+                toppingsPrice = 8;
+            }
+            else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
+                toppingsPrice = 6;
+            }
+        }
+        else if(crust==="Pan Crust"){
+            crustPrice=3;
+            if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
+                toppingsPrice = 5;
+            }
+            else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
+                toppingsPrice = 8;
+            }
+            else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
+                toppingsPrice = 6;
+            }
+        }
+        else if(crust==="Deep Crust"){
+            crustPrice=4;
+            if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
+                toppingsPrice = 5;
+            }
+            else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
+                toppingsPrice = 8;
+            }
+            else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
+                toppingsPrice = 6;
+            }
+        }
+        else if(crust==="Cheese Filled Crust"){
+            crustPrice=10;
+            if (toppings===toppingsArray[0] || toppings===toppingsArray[1]){
+                toppingsPrice = 5;
+            }
+            else if(toppings===toppingsArray[2] || toppings===toppingsArray[4]){
+                toppingsPrice = 8;
+            }
+            else if(toppings===toppingsArray[3] || toppings===toppingsArray[5]){
+                toppingsPrice = 6;
+            }
+        }
+    }
     // else if(sizePrice==="Large"){
     //     sizePrice = 15;
     //     if(crust==="Thin Crust"){

@@ -245,10 +245,10 @@ $(document).ready(function(){
         $("ol#prices").append('<li><span>'+ "cost: " + price(pizzaSize,pizzaCrust,pizzaToppings) + "$" +'</span></li>');
         resetInputs();
     });
-//     $("#checkout").click(function(){
-//         $(".hidden").show();
-//         $("h4#total").append(" "+ sumTotal + "$.");
-//     });
+    $("#checkout").click(function(){
+        $(".hidden").show();
+        $("h4#total").append(" "+ sumTotal + "$.");
+    });
 //     $("#chooseDeliver").click(function(event){
 //         event.preventDefault();
 //         alert("Delivery charge is 15$ charged after reception of pizza.")

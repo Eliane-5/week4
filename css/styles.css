@@ -3,10 +3,26 @@
 }
 .nav{
     background-color:darkgray;
+    margin-bottom: 0;
 }
 .all{
-    margin-top: 3%;
+    padding-top:2%; 
+    text-align: center;
 }
 .nav>li>a{
     color: aliceblue;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link{
+    background-color: white;
+}
+#summary{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    text-align: left;
+}
+.sum{
+    display: inherit;
+    width: 50%;
 }

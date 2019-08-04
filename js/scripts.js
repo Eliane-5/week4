@@ -20,7 +20,7 @@ var toppingsArray = ["Ham, pineapple, Cheese","Bacon, shrimp, tomato sauce","Bar
 var sizePrice,crustPrice,toppingsPrice;
 // var totalPrice = [];
 // var sumTotal = 0;
-function price(size,crust,toppings){
+function price(size,crust,toppings){ 
     if(size==="Small"){
         sizePrice = 5;
         if(crust==="Thin Crust"){

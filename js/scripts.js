@@ -13,9 +13,9 @@ function resetInputs(){
     $("#comment").val("");
     $("#num").val("");
 }
-// Orders.prototype.fullOrder = function (){
-//     return this.amount + " " + this.size + ", " + this.crust + ", " + this.toppings + " and: " + this.comment;
-// }
+Orders.prototype.fullOrder = function (){
+    return this.amount + " " + this.size + ", " + this.crust + ", " + this.toppings + " and: " + this.comment;
+}
 var toppingsArray = ["Ham, pineapple, Cheese","Bacon, shrimp, tomato sauce","Barbecue sauce, chicken","Taco toppings, picante sauce","Kale, ricotta, and sausage","Garlic and ranch, Garlic ranch sauce"];
 var sizePrice,crustPrice,toppingsPrice;
 var totalPrice = [];

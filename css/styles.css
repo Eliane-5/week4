@@ -1,0 +1,12 @@
+#deliver,#reserve,#checkout,.hidden{
+    display: none;
+}
+.nav{
+    background-color:darkgray;
+}
+.all{
+    margin-top: 3%;
+}
+.nav>li>a{
+    color: aliceblue;
+}

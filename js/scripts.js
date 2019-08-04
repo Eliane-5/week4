@@ -1,11 +1,11 @@
 //BUSINESS LOGIC CODE
-// var Orders = function(size,crust,toppings,number,addition){
-//     this.size = size;
-//     this.crust = crust;
-//     this.toppings = toppings;
-//     this.amount = number;
-//     this.comment = addition;
-// }
+var Orders = function(size,crust,toppings,number,addition){
+    this.size = size;
+    this.crust = crust;
+    this.toppings = toppings;
+    this.amount = number;
+    this.comment = addition;
+}
 // function resetInputs(){
 //     $("#size").val("");
 //     $("#crust").val("");

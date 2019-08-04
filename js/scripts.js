@@ -238,12 +238,12 @@ $(document).ready(function(){
         amount = $("#num").val();
         console.log(amount);
         
-//         var newOrder = new Orders(pizzaSize,pizzaCrust,pizzaToppings,amount,comments);
-//         // console.log(newOrder);
+        var newOrder = new Orders(pizzaSize,pizzaCrust,pizzaToppings,amount,comments);
+        // console.log(newOrder);
 
-//         $("ol#ordered").append('<li><span>'+ newOrder.fullOrder() +'</span></li>');
-//         $("ol#prices").append('<li><span>'+ "cost: " + price(pizzaSize,pizzaCrust,pizzaToppings) + "$" +'</span></li>');
-//         resetInputs();
+        $("ol#ordered").append('<li><span>'+ newOrder.fullOrder() +'</span></li>');
+        $("ol#prices").append('<li><span>'+ "cost: " + price(pizzaSize,pizzaCrust,pizzaToppings) + "$" +'</span></li>');
+        resetInputs();
     });
 //     $("#checkout").click(function(){
 //         $(".hidden").show();

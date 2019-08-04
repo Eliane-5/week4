@@ -261,14 +261,14 @@ $(document).ready(function(){
         $("#reserve").show();
         $("#chooseDeliver").hide();
     });
-//     $("#submitDeliver").click(function(event){
-//         event.preventDefault();
-//         alert("your order will be delivered to your location");
-//         $("#checkout").show();
-//     });
-//     $("#submitRes").click(function(event){
-//         event.preventDefault();
-//         alert("your table has been reserved.");
-//         $("#checkout").show();
-//     });
+    $("#submitDeliver").click(function(event){
+        event.preventDefault();
+        alert("your order will be delivered to your location");
+        $("#checkout").show();
+    });
+    $("#submitRes").click(function(event){
+        event.preventDefault();
+        alert("your table has been reserved.");
+        $("#checkout").show();
+    });
 });

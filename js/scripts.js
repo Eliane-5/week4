@@ -10,7 +10,7 @@
 //     $("#size").val("");
 //     $("#crust").val("");
 //     $("#toppings").val("");
-//     $("#comment").val();
+//     $("#comment").val("");
 //     $("#num").val("");
 // }
 // Orders.prototype.fullOrder = function (){
@@ -222,21 +222,21 @@ function price(size,crust,toppings){
 }
 
 // UI LOGIC CODE
-// var pizzaSize,pizzaCrust,pizzaToppings,comments,amount;
-// $(document).ready(function(){
-//     $("#order").click(function(event){
-//         event.preventDefault();
-//         alert("Please enter a new order, if this was your last... select deliver or reservation to proceed to checkout");
-//         pizzaSize = $("#size").val();
-//         console.log(pizzaSize);
-//         pizzaCrust = $("#crust").val();
-//         console.log(pizzaCrust);
-//         pizzaToppings = $("#toppings").val();
-//         console.log(pizzaToppings);
-//         comments = $("#comment").val();
-//         console.log(comments);
-//         amount = $("#num").val();
-//         console.log(amount);
+var pizzaSize,pizzaCrust,pizzaToppings,comments,amount;
+$(document).ready(function(){
+    $("#order").click(function(event){
+        event.preventDefault();
+        alert("Please enter a new order, if this was your last... select deliver or reservation to proceed to checkout");
+        pizzaSize = $("#size").val();
+        console.log(pizzaSize);
+        pizzaCrust = $("#crust").val();
+        console.log(pizzaCrust);
+        pizzaToppings = $("#toppings").val();
+        console.log(pizzaToppings);
+        comments = $("#comment").val();
+        console.log(comments);
+        amount = $("#num").val();
+        console.log(amount);
         
 //         var newOrder = new Orders(pizzaSize,pizzaCrust,pizzaToppings,amount,comments);
 //         // console.log(newOrder);
@@ -244,7 +244,7 @@ function price(size,crust,toppings){
 //         $("ol#ordered").append('<li><span>'+ newOrder.fullOrder() +'</span></li>');
 //         $("ol#prices").append('<li><span>'+ "cost: " + price(pizzaSize,pizzaCrust,pizzaToppings) + "$" +'</span></li>');
 //         resetInputs();
-//     });
+    });
 //     $("#checkout").click(function(){
 //         $(".hidden").show();
 //         $("h4#total").append(" "+ sumTotal + "$.");
@@ -271,4 +271,4 @@ function price(size,crust,toppings){
 //         alert("your table has been reserved.");
 //         $("#checkout").show();
 //     });
-// });
+});

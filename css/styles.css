@@ -2,7 +2,7 @@
     display: none;
 }
 .nav{
-    background-color:darkgray;
+    background-color:black;
     margin-bottom: 0;
 }
 .all{
@@ -25,4 +25,32 @@
 .sum{
     display: inherit;
     width: 50%;
+}
+.jumbotron{
+    background-image: url("../images/home.jpg");
+    height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#about>h6,#help>h6{
+    background-image: url("../images/about.jpg");
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: yellowgreen;
+    padding:50px;
+    margin-right: 40px;
+}
+#about,#help{
+    text-align: center;
+}
+#about>p,#help>p,#help>ul{
+    width: 320px;
+    text-align: left;
+}
+.header{
+    text-align: center;
+    border-bottom: 1px dotted black;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
 }

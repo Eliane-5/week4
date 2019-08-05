@@ -6,15 +6,8 @@ var Orders = function(size,crust,toppings,number,addition){
     this.amount = number;
     this.comment = addition;
 }
-function resetInputs(){
-    $("#size").val("");
-    $("#crust").val("");
-    $("#toppings").val("");
-    $("#comment").val("");
-    $("#num").val("");
-}
 Orders.prototype.fullOrder = function (){
-    return this.amount + " " + this.size + ", " + this.crust + ", " + this.toppings + " and: " + this.comment;
+    return this.amount + " " + this.size + ", " +  this.crust + ",with( " + this.toppings + ") toppings. Comments: " + this.comment;
 }
 var toppingsArray = ["Ham, pineapple, Cheese","Bacon, shrimp, tomato sauce","Barbecue sauce, chicken","Taco toppings, picante sauce","Kale, ricotta, and sausage","Garlic and ranch, Garlic ranch sauce"];
 var sizePrice,crustPrice,toppingsPrice;
@@ -214,14 +207,27 @@ function price(size,crust,toppings){
     console.log("pricing: "+pricing);
     totalPrice.push(pricing);
     console.log(totalPrice);
-    for(var i=0;i<totalPrice.length;i++){
-        sumTotal+=totalPrice[i];
-        console.log("sum "+sumTotal);
+    if(totalPrice.length>0){
+        for(var i=0;i<totalPrice.length;i++){
+            sumTotal+=totalPrice[i];
+            console.log("sum "+sumTotal);
+        }
     }
+    // else{
+    //     sumTotal=pricing;
+    // }
     return (sizePrice + toppingsPrice + crustPrice) * amount;
 }
 
 // UI LOGIC CODE
+function resetInputs(){
+    $("#size").val("");
+    $("#crust").val("");
+    $("#toppings").val("");
+    $("#comment").val("");
+    $("#num").val("");
+}
+
 var pizzaSize,pizzaCrust,pizzaToppings,comments,amount;
 $(document).ready(function(){
     $("#order").click(function(event){
@@ -251,13 +257,13 @@ $(document).ready(function(){
     });
     $("#chooseDeliver").click(function(event){
         event.preventDefault();
-        alert("Delivery charge is 15$ charged after reception of pizza.")
+        alert("Delivery charge is 15$ charged after reception of pizza. Press 'OK' to continue")
         $("#deliver").show();
         $("#chooseReservation").hide();
     });
     $("#chooseReservation").click(function(event){
         event.preventDefault();
-        alert("5$ Reservation charges will be added to your bill at the restaurant.")
+        alert("5$ Reservation charges will be added to your bill at the restaurant. Press 'OK' to continue")
         $("#reserve").show();
         $("#chooseDeliver").hide();
     });

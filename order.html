@@ -22,6 +22,7 @@
             </li>
         </ul>
     </div>
+
     <div class="row all">
         <div class="col-md-6">
             <form>
@@ -113,7 +114,7 @@
                 </form>
             </div>
             <div id="reserve">
-                <h5>Please enter your full name and the number of people you are reserving for:</h5>
+                <h5>Enter full name and table size:</h5>
                 <form class="form-inline">
                     <div class="form-group">
                         <input type="text" class="form-control mb-2 mr-sm-2" id="Name" placeholder="Enter your full Name">
@@ -128,15 +129,20 @@
             </div>
             <button type="button" class="btn btn-dark" id="checkout">Checkout</button>
             <div class="hidden">
-                <h4>You ordered:</h4>
-                <ol id="ordered">
+                <div id="summary">
+                    <div class="sum">
+                        <h5>Order(s):</h5>
+                        <ol id="ordered">
     
-                </ol>
-                <h4>Prices</h4>
-                <ol id="prices">
+                        </ol>
+                    </div>
+                    <div class="sum">
+                        <h5>Price(s):</h5>
+                        <ol id="prices">
 
-                </ol>
-            
+                        </ol>
+                    </div>
+                </div>
                 <h4 id="total">The total price is: </h4>
             </div>
         </div> 
